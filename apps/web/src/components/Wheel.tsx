@@ -94,16 +94,6 @@ export const Wheel = ({
             <text
               x={ix}
               y={iy + 6}
-              fontSize={20}
-              textAnchor="middle"
-              dominantBaseline="middle"
-              style={{
-                userSelect: "none",
-                fontFamily:
-                  "'Segoe UI Symbol', 'Apple Color Emoji', 'Noto Color Emoji', system-ui, sans-serif",
-                fill: "#111827",
-              }}
-              pointerEvents="none"
             >
               {s.glyph}
             </text>
