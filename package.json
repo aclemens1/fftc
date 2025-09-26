@@ -1,0 +1,19 @@
+{
+  "name": "fftcompanion",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.0.0",
+  "scripts": {
+    "dev:cloud": "pnpm --filter @app/cloud dev",
+    "dev:web": "pnpm --filter @app/web dev",
+    "dev": "concurrently -n CLOUD,WEB -c blue,green \"pnpm dev:cloud\" \"pnpm dev:web\"",
+    "build": "pnpm -r build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "typescript": "^5.6.0"
+  },
+  "workspaces": [
+    "apps/*"
+  ]
+}
